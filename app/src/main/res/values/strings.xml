@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoadingStateView</string>
+
+
+    <string name="loading">Loading</string>
+    <string name="success">successfully</string>
+    <string name="failed">Failed</string>
+    <string name="empty">Empty Result</string>
+
+</resources>
