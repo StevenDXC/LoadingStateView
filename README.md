@@ -3,11 +3,14 @@ loading view with state for android
 
 swift version:https://github.com/StevenDXC/DxLoadingHUD
 
+
+Demo:
+
+
  ![image](https://github.com/StevenDXC/LoadingStateView/blob/master/image/demo.gif)
  
 
 usage:
-
 
 layout:
 ```xml
