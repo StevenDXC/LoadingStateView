@@ -6,28 +6,43 @@ Loading HUD by Swift
 
 Loading animation HUD,base on https://github.com/pkluz/PKHUD and https://github.com/iamim2/OneLoadingAnimation
 
- ![image](https://github.com/StevenDXC/DxLoadingHUD/blob/master/Image/demo.gif)
+ ![image](https://github.com/StevenDXC/LoadingStateView/blob/master/image/demo.gif)
  
 
 usage:
 
 
-show:
-```java
-DxLoadingHUD.sharedInstance.show();
+layout:
+```xml
+ <com.dxc.loadingstateview.widget.LoadingStateView
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:view_size="large"
+        app:color_empty="@color/empty_color"
+        app:color_normal="@color/loading_color"
+        app:color_success="@color/success_color"
+        app:color_failed="@color/failed_color"/>
 ```
+
 
 success:
 ```java
-DxLoadingHUD.sharedInstance.showSuccessAnimation();
+mLoadingView.setViewState(LoadingStateView.STATE_SUCCESS);
 ```
 
 failed:
 ```java
-DxLoadingHUD.sharedInstance.showErrorAnimation();
+mLoadingView.setViewState(LoadingStateView.STATE_FAILED);
 ```
 
 empty:
-```swift
-DxLoadingHUD.sharedInstance.showEmptyAnimation();
+```java
+ mLoadingView.setViewState(LoadingStateView.STATE_EMPTY_RESULT);
 ```
+
+ to loading state:
+ ```java
+ mLoadingView.setViewState(LoadingStateView.STATE_LOADING);
+ ```
